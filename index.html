@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Convite Laisla Heloise</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="scene">
+      <!-- Tela inicial -->
+      <section class="screen start-screen active" id="startScreen">
+        <img src="./assets/cena-inicial.png" alt="Convite fechado" />
+
+        <p class="tap-text">Toque para abrir</p>
+
+        <button
+          class="seal-button"
+          id="openButton"
+          aria-label="Abrir convite"
+        ></button>
+      </section>
+
+      <!-- Vídeo -->
+      <section class="screen video-screen" id="videoScreen">
+        <video
+          id="openingVideo"
+          src="./assets/abertura.mp4"
+          playsinline
+          preload="auto"
+        ></video>
+      </section>
+
+      <!-- Tela final -->
+      <section class="screen final-screen" id="finalScreen">
+        <img src="./assets/cena-final.png" alt="Convite da Laisla Heloise" />
+
+        <nav class="buttons" id="buttons">
+          <a
+            class="action-button"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/icone-presentes.png" alt="" />
+            <span>Lista de presentes</span>
+          </a>
+
+          <a
+            class="action-button"
+            href="https://www.google.com/maps/dir/?api=1&destination=Rua%20En%C3%A9ias%20Lu%C3%ADs%20Carlos%20Barbanti%2C%20430%20-%20Vila%20Arcadia%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002911-000&travelmode=driving"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/icone-localizacao.png" alt="" />
+            <span>Como chegar</span>
+          </a>
+
+          <a
+            class="action-button"
+            href="https://wa.me/5511988590905?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Gostaria%20de%20confirmar%20minha%20presen%C3%A7a%20no%20anivers%C3%A1rio%20de%2015%20anos%20da%20Laisla%20Heloise.%20Meu%20nome%20%C3%A9%3A%20"
+            target="_blank"
+            rel="noopener noreferrer"
+            s
+          >
+            <img src="./assets/icone-presenca.png" alt="" />
+            <span>Confirmar presença</span>
+          </a>
+        </nav>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
